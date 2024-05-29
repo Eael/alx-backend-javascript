@@ -13,7 +13,13 @@ Eg: `doSomething()
             console.log(listOfIngredients);
         });
 `
-
+Eg 2: `function Something(firstName, lastName) {
+  return Promise.resolve({ firstName, lastName });
+  `
+returns `{
+  firstName: value,
+  lastName: value,
+}`
 # Async Function
 Allows you run and wait 
 
