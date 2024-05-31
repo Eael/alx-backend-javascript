@@ -1,4 +1,4 @@
-import Currency from './Currency';
+import Currency from './3-currency';
 /**
  * This class represents a pricing object
  */
