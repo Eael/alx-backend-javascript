@@ -45,11 +45,11 @@ export default class HorbeltonCourse {
    * Sets the length of the course.
    * @param {number} length - The length of the course.
    */
-  set length(length) {
-    if (typeof length !== 'number') {
+  set length(value) {
+    if (typeof value !== 'number') {
       throw new TypeError('length must be a number');
     }
-    this._length = length;
+    this._length = value;
   }
 
   /**
