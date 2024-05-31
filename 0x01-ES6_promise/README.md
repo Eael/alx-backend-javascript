@@ -20,6 +20,7 @@ returns `{
   firstName: value,
   lastName: value,
 }`
+
 # Async Function
 Allows you run and wait 
 
