@@ -9,14 +9,15 @@ export default class Pricing{
   }
   
   /**
-   * This method returns the amount of the pricing object
+   * @returns {number} The amount of the pricing object
    */
   get amount() {
     return this._amount;
   }
 
   /**
-   * This method sets the amount of the pricing object
+   * @params {number} amount
+   *  This method sets the amount of the pricing object
    */
   set amount(amount) {
     if (typeof amount !== 'number') {
@@ -26,6 +27,7 @@ export default class Pricing{
   }
 
   /**
+   * @returns {Currency}
    * This method returns the currency of the pricing object
    */
   get currency() {
@@ -33,6 +35,7 @@ export default class Pricing{
   }
 
   /**
+   * @params {Currency} currency
    * This method sets the currency of the pricing object
    */
   set currency(currency) {
@@ -43,6 +46,7 @@ export default class Pricing{
   }
 
   /**
+   * @returns {string}
    * This method returns the full price of the pricing object
    */
   displayFullPrice() {
@@ -50,6 +54,7 @@ export default class Pricing{
   }
 
   /**
+   * @params {number} amount
    * This method converts the price of the pricing object
    */
   static convertPrice(amount, conversionRate) {
