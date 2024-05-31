@@ -58,7 +58,8 @@ export default class Pricing{
    * This method converts the price of the pricing object
    */
   static convertPrice(amount, conversionRate) {
-    if ((typeof amount !== 'number') && (typeof conversionRate !== 'number')) {
+    if ((typeof amount !== 'number') &&
+      (typeof conversionRate !== 'number')) {
       throw new TypeError('amount and conversionRate must be a number');
     }
     return amount * conversionRate;
