@@ -2,22 +2,21 @@ export default class Currency {
   constructor(code, name) {
     this.code = code;
     this.name = name;
-    this.displayFullCurrency = this.displayFullCurrency.bind(this);
   }
 
-  get Code() {
+  get code() {
     return this._code;
   }
 
-  set Code(value) {
+  set code(value) {
     this._code = value;
   }
 
-  get Name() {
+  get name() {
     return this._name;
   }
 
-  set Name(value) {
+  set name(value) {
     this._name = value;
   }
 
