@@ -24,13 +24,13 @@ export default class HorbeltonCourse {
 
   /**
    * Sets the name of the course.
-   * @param {string} name - The name of the course.
+   * @param {string} value - The name of the course.
    */
-  set name(name) {
-    if (typeof name !== 'string') {
+  set name(value) {
+    if (typeof value !== 'string') {
       throw new TypeError('name must be a string');
     }
-    this._name = name;
+    this._name = value;
   }
 
   /**
