@@ -9,13 +9,14 @@ export default class HorbeltonCourse {
    * @param {string[]} students - The students in the course.
    */
   constructor(name, length, students) {
-    this._name = name;
-    this._length = length;
-    this._students = students;
+    this.name = name;
+    this.length = length;
+    this.students = students;
   }
 
   /**
    * Gets the name of the course.
+   * @returns {string} The name of the course.
    */
   get name() {
     return this._name;
@@ -23,6 +24,7 @@ export default class HorbeltonCourse {
 
   /**
    * Sets the name of the course.
+   * @param {string} value - The name of the course.
    */
   set name(value) {
     if (typeof value !== 'string') {
@@ -33,6 +35,7 @@ export default class HorbeltonCourse {
 
   /**
    * Gets the length of the course.
+   * @returns {number} The length of the course.
    */
   get length() {
     return this._length;
@@ -40,16 +43,18 @@ export default class HorbeltonCourse {
 
   /**
    * Sets the length of the course.
+   * @param {number} length - The length of the course.
    */
-  set length(value) {
-    if (typeof value !== 'number') {
+  set length(length) {
+    if (typeof length !== 'number') {
       throw new TypeError('length must be a number');
     }
-    this._length = value;
+    this._length = length;
   }
 
   /**
    * Gets the students in the course.
+   * @returns {string[]} The students in the course.
    */
   get students() {
     return this._students;
@@ -57,9 +62,10 @@ export default class HorbeltonCourse {
 
   /**
    * Sets the students in the course.
+   * @param {string[]} students - The students in the course.
    */
   set students(students) {
-    if (!(students instanceof Array)) {
+    if (!Array.isArray(students)) {
       throw new TypeError('students must be an array');
     }
     if (students.every(student => typeof student !== 'string')) {
