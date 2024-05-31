@@ -65,10 +65,10 @@ export default class HorbeltonCourse {
    * @param {string[]} students - The students in the course.
    */
   set students(students) {
-    if (!Array.isArray(students)) {
+    if (!(students instanceof Array)) {
       throw new TypeError('students must be an array');
     }
-    if (students.some(student => typeof student !== 'string')) {
+    if (students.every(student => typeof student !== 'string')) {
       throw new TypeError('students must be an array of strings');
     }
     this._students = students;
