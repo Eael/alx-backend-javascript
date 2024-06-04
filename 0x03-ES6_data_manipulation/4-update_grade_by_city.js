@@ -1,5 +1,4 @@
 /**
- * 
  * @param {Array} students 
  * @param {string} city 
  * @param {Array} newGrades 
