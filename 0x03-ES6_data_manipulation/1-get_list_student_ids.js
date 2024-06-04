@@ -1,3 +1,3 @@
-export default getListStudentIds (student) => {
-  return getListStudentIds.map((student) => student.id);
+export default getListStudentIds = (student) => {
+  return student.map((student) => student.id);
 }
