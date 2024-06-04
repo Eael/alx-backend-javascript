@@ -1,4 +1,10 @@
-
+/**
+ * 
+ * @param {Array} students 
+ * @param {string} city 
+ * @param {Array} newGrades 
+ * @returns 
+ */
 export default function updateStudentGradeByCity(students, city, newGrades) {
   if (!(students instanceof Array)) return [];
   if (typeof city !== 'string') return [];
