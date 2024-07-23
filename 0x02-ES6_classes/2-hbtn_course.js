@@ -68,7 +68,7 @@ export default class HorbeltonCourse {
     if (!Array.isArray(students)) {
       throw new TypeError('students must be an array');
     }
-    if (students.every(student => typeof student !== 'string')) {
+    if (students.every(student => (typeof student !== 'string'))) {
       throw new TypeError('students must be an array of strings');
     }
     this._students = students;
