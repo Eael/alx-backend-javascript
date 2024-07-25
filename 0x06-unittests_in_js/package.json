@@ -1,0 +1,21 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "Learning the basics of unit testing in NodeJS",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "lint-all": "./node_modules/.bin/eslint [0-9]*.js",
+    "lint-fix-all": "./node_modules/.bin/eslint --fix [0-9]*.js",
+    "test": "node ./node_modules/mocha/bin/mocha --require babel-register --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eael/alx-backend-javascript.git"
+  },
+  "author": "Eael <1kwameearl@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eael/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/Eael/alx-backend-javascript#readme"
+}
