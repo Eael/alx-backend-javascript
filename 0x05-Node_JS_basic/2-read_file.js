@@ -13,7 +13,7 @@ const countStudents = (dataPath) => {
   }
   const fileLines = fs
     .readFileSync(dataPath, 'utf-8')
-    .toString('utf-8')
+    // .toString('utf-8')
     .trim()
     .split('\n');
   const studentGroups = {};

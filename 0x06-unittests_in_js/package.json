@@ -6,7 +6,7 @@
     "lint": "./node_modules/.bin/eslint",
     "lint-all": "./node_modules/.bin/eslint [0-9]*.js",
     "lint-fix-all": "./node_modules/.bin/eslint --fix [0-9]*.js",
-    "test": "node ./node_modules/mocha/bin/mocha --require babel-register --exit"
+    "test": "mocha "
   },
   "repository": {
     "type": "git",
