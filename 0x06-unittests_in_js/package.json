@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Eael/alx-backend-javascript/issues"
   },
-  "homepage": "https://github.com/Eael/alx-backend-javascript#readme"
+  "homepage": "https://github.com/Eael/alx-backend-javascript#readme",
+  "dependencies": {
+    "chai": "^4.5.0",
+    "sinon": "^18.0.0"
+  }
 }
